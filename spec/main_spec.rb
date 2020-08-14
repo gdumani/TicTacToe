@@ -13,9 +13,11 @@ describe Board do
     it 'returns a new board as array 3x3 of accending numbers 1 to 9 as strings' do
       expect(board.b).to eql([%w[1 2 3], %w[4 5 6], %w[7 8 9]])
     end
+
     it 'returns the moves counter to 9' do
       expect(board.counter).to eql(9)
     end
+
     it 'returns an array of valid symbols' do
       expect(board.symbols).to eql(%w[X O])
     end
@@ -44,6 +46,7 @@ describe Board do
         expect(board.counter).to eql(9)
         expect(board.current).to eql(0)
       end
+
       it 'return X symbol and counter 0 after for game winner_row_X do' do
         winner_row.each { |i| board.turn('X', i) }
         expect(board.counter).to eql(0)
@@ -67,10 +70,25 @@ describe Board do
         expect(board.counter).to eql(0)
         expect(board.symb).to eql('O')
       end
+    end
 
+    describe '#current' do
+      it 'alternate between 0 an 1 on each turn but not on invalid ones' do
+        expect(board.current).to eql(0)
+        board.turn('X', 1)
+        expect(board.current).to eql(1)
+        board.turn('O', 3)
+        expect(board.current).to eql(0)
+        board.turn('X', 3)
+        expect(board.current).not_to eql(1)
+      end
+    end
+
+    describe '#display' do
       it 'Checks if the board is played correctly' do
         expect(board.display).to eql(display_board)
       end
+
       it 'Checks if a row X-O-X indeed changes the board and if it doesnt return a winner' do
         board.turn('X', 1)
         board.turn('O', 2)
