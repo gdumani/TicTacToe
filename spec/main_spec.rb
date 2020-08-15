@@ -92,7 +92,6 @@ describe Board do
         board.turn('X', 3)
         expect(board.current).not_to eql(1)
       end
-
     end
 
     describe '#display' do
