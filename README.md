@@ -14,12 +14,12 @@ RSpec 3.9
 
 To display colors install the 'colorize' GEM
 
-gem install colorize
+- gem install colorize
 
 ## Getting Started
 
 ​To get a local copy up and running follow these simple example steps.​ 
-Git clone https://github.com/gdumani/TicTacToe
+- git clone https://github.com/gdumani/TicTacToe
 
 ## Commands
 
@@ -45,13 +45,11 @@ If none of the players matches that condition, the game will be declared a draw.
 
 ## Instructions to test with Rspec
 
-Go to the directory where TicTacToe is installed according to the getting started instructions and install Rspec by typing:
+Go to the directory where TicTacToe is installed according to the getting started previous instructions and install Rspec. 
 
-gem install rspec
+- To install rspec run: gem install rspec
 
-To run curren tests just type 
-
-rspec
+- To run curren tests just type: rspec 
 
 New test can be added in ./spec/main_spec.rb file following the Rspec guidelines.
 
