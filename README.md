@@ -1,6 +1,7 @@
 # TicTacToe
 
-Traditional Tic Tac Toe game implented in Ruby
+Traditional Tic Tac Toe game implented in Ruby. The project was updated by being tested using RSpec 3.9 in which we compare the results of simulated outputs to our classes' outputs. The tests check the game flow, its parameters, and the winning/drawing scenarios.
+
 
 ## Built With
 ​
@@ -15,7 +16,7 @@ gem install colorize
 ## Getting Started
 
 ​To get a local copy up and running follow these simple example steps.​ 
-Git clone https://github.com/epinczinger/TicTacToe
+Git clone https://github.com/gdumani/TicTacToe
 
 ## Commands
 
@@ -39,6 +40,18 @@ If none of the players matches that condition, the game will be declared a draw.
 
 ![screenshot](/images/screenshot2.png)
 
+## Instructions to test with Rspec
+
+Go to the directory where TicTacToe is installed according to the getting started instructions and install Rspec by typing:
+
+gem install rspec
+
+To run curren tests just type 
+
+rspec
+
+New test can be added in ./spec/main_spec.rb file following the Rspec guidelines.
+
 ## Authors
 
 👤 **Esteban Pinczinger**
@@ -52,6 +65,11 @@ If none of the players matches that condition, the game will be declared a draw.
 - Github: [gdumani](https://github.com/gdumani)
 - Twitter: [@gdumani1](https://twitter.com/gdumani1)
 - Linkedin: [Giancarlo-Dumani](https://www.linkedin.com/in/giancarlo-dumani-a7364a1a1/?originalSubdomain=cr)
+
+👤 **Alexandre Bouhid**
+
+- Github: [abouhid](https://github.com/abouhid)
+- Linkedin: [Alexandre-Bouhid](https://www.linkedin.com/in/alexandrebouhid/edit/intro/)
 
 ## 🤝 Contributing
 

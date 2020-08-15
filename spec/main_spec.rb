@@ -73,15 +73,26 @@ describe Board do
     end
 
     describe '#current' do
-      it 'alternate between 0 an 1 on each turn but not on invalid ones' do
+      it 'starts calling current user 0' do
+        expect(board.current).to eql(0)
+      end
+
+      it 'alternate between 0 an 1 on valid moves' do
         expect(board.current).to eql(0)
         board.turn('X', 1)
         expect(board.current).to eql(1)
         board.turn('O', 3)
         expect(board.current).to eql(0)
+      end
+
+      it 'does not alternate if location is is already used (invalid move) ' do
+        board.turn('X', 1)
+        board.turn('O', 3)
+        expect(board.current).to eql(0)
         board.turn('X', 3)
         expect(board.current).not_to eql(1)
       end
+
     end
 
     describe '#display' do
