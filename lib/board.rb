@@ -1,5 +1,3 @@
-#require 'colorize'
-
 class Board
   attr_reader :symb, :counter, :b, :symbols
 
