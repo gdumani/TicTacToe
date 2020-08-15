@@ -14,7 +14,7 @@ RSpec 3.9
 
 To display colors install the 'colorize' GEM
 
-- gem install colorize
+- 'gem install colorize'
 
 ## Getting Started
 
@@ -23,7 +23,7 @@ To display colors install the 'colorize' GEM
 
 ## Commands
 
-ruby main.rb
+'ruby main.rb'
 
 ## Intructions to Play
 
@@ -47,9 +47,9 @@ If none of the players matches that condition, the game will be declared a draw.
 
 Go to the directory where TicTacToe is installed according to the getting started previous instructions and install Rspec. 
 
-- To install rspec run: gem install rspec
+- To install rspec run: 'gem install rspec'
 
-- To run curren tests just type: rspec 
+- To run curren tests just type: 'rspec' 
 
 New test can be added in ./spec/main_spec.rb file following the Rspec guidelines.
 
