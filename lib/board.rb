@@ -42,7 +42,7 @@ class Board
       test.map { |x| x.uniq.count }.include?(1) ||
       trans.map { |x| x.uniq.count }.include?(1)
   end
-  
+
   #  rubocop:enable Metrics/CyclomaticComplexity
 
   def invalid_input(loc)
