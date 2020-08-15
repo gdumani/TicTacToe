@@ -1,11 +1,14 @@
 # TicTacToe
 
-Traditional Tic Tac Toe game implented in Ruby. The project was updated by being tested using RSpec 3.9 in which we compare the results of simulated outputs to our classes' outputs. The tests check the game flow, its parameters, and the winning/drawing scenarios.
+Traditional Tic Tac Toe game implented in Ruby. 
+The project was updated by being tested using RSpec 3.9 in which we compare the results of simulated outputs to our classes' outputs.
+The tests check the game flow, its parameters, and the winning/drawing scenarios.
 
 
 ## Built With
 ​
 Ruby 2.6.5
+RSpec 3.9
 ​
 ## Requirements
 
