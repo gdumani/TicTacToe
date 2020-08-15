@@ -34,6 +34,7 @@ class Board
   private
 
   #  rubocop:disable Metrics/CyclomaticComplexity
+
   def winner(test)
     trans = test.transpose
     (0...test.size).collect { |i| test[i][i] }.uniq.count == 1 ||
@@ -41,6 +42,7 @@ class Board
       test.map { |x| x.uniq.count }.include?(1) ||
       trans.map { |x| x.uniq.count }.include?(1)
   end
+  
   #  rubocop:enable Metrics/CyclomaticComplexity
 
   def invalid_input(loc)
